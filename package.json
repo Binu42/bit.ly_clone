@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.7.6",
+    "faker": "^4.1.0",
+    "lodash": "^4.17.15",
     "meteor-node-stubs": "^1.0.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
