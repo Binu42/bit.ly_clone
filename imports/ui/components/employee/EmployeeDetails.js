@@ -1,11 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-export default class EmployeeDetails extends Component {
-  render() {
-    return (
-      <div>
-        {this.props}
+const EmployeeDetail = ({ Employee }) => {
+  const { name, email, phone, avatar } = Employee;
+
+  return (
+    <div className="thumbnail">
+      <img src={avatar} />
+      <div className="caption">
+        <h3>{name}</h3>
+        <ul className="list-group">
+          <li className="list-group-item">Email: {email}</li>
+          <li className="list-group-item">Phone: {phone}</li>
+        </ul>
       </div>
-    )
-  }
-}
+    </div>
+  );
+};
+
+export default EmployeeDetail;

@@ -13,7 +13,8 @@ Meteor.startup(() => {
     })
   }
 
-  Meteor.publish('employees', (per_page) => {
+  Meteor.publish('employees', function (per_page) {
+    console.log(per_page)
     return Employees.find({}, { limit: per_page });
   })
 });
